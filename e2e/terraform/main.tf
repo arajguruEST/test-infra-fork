@@ -30,3 +30,11 @@ variable "fail_fast" {
   default     = "false"
   type        = string
 }
+
+module "github_action_gcp_resource" {
+  source               = ".//modules/gh_action_resource"
+  project_id = "nephio-deployment"
+  wif_pool_id = "gh-action-wif-pool02"
+  github_org  = "arajguruEST"
+  github_repo = "test-infra-fork"
+}
