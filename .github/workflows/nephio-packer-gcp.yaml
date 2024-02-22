@@ -2,7 +2,7 @@ name: Nephio Packer GCP Build
 
 on:
   push:
-    branches: [main]
+    branches: [add_packer_build]
     paths-ignore: ['**/README.md', 'prow/*', 'tools/*', 'images/*']
 
 env:
